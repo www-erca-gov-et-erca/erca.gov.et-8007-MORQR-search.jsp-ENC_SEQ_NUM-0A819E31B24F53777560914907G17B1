@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Receipt</title>
+
+<!-- ✅ Load Ethiopic font WITH bold -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* Reset */
+body {
+    margin: 0;
+
+    padding: 0;
+    background: #ffffff;
+    color: #000;
+
+    /* ✅ GLOBAL BOLD */
+    font-family: "Times New Roman", serif;
+    font-weight: 700;
+}
+
+/* Receipt container */
+.receipt {
+    width: 100%;
+    max-width: 340px;
+    margin: 10px auto 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ✅ FORCE EVERYTHING BOLD */
+.receipt,
+
+.receipt * {
+    font-weight: 700 !important;
+}
+
+/* Title */
+.title {
+    font-size: 12.5px;
+    margin-bottom: 16px;
+}
+
+/* Lines */
+.line {
+    font-size: 13px;
+    margin: 2px 0;
+    line-height: 1.15;
+}
+
+/* Amharic */
+.amharic {
+    font-family: 'Noto Sans Ethiopic', serif;
+}
+
+
+/* English */
+.english {
+    font-family: "Times New Roman", serif;
+}
+
+/* SPECIAL FULL WIDTH LINE */
+.full-width-line {
+    white-space: nowrap;
+    margin-left: -25px;
+    margin-right: -5px;
+    letter-spacing: -0.2px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="receipt">
+
+    <div class="title">
+        Ministry of Revenue: Valid Receipt
+    </div>
+
+    <div class="line amharic">
+        የደረሰኝ መለያ ቁጥር: <span class="english">350</span>
+    </div>
+
+    <div class="line amharic">
+        የግብር ከፋይ መለያ ቁጥር: <span class="english">0060991873</span>
+    </div>
+
+    <div class="line amharic">
+        የደረሰኝ ዓይነት: <span class="english">CASH SALES INVOICE/VAT</span>
+    </div>
+
+    <div class="line amharic">
+
+        የግብር ከፋይ ስም: የታባሽ ሰገራው አየነው
+    </div>
+
+    <div class="line amharic full-width-line">
+        የግብሩ ከፋዩ ታክስ ማዕከል:
+        <span class="english">TIGRAY-KEDAMAY WEYANE SUBCITY</span>
+    </div>
+
+    <div class="line amharic">
+        የቫት/VAT/ መለያ ቁጥር: <span class="english">17123270844</span>
+    </div>
+
+    <div class="line amharic">
+        የቫት/VAT/ ቁጥር: <span class="english">3800160844</span>
+    </div>
+
+    <div class="line amharic">
+
+        የማተሚያ ቤት ስም:
+        <span class="english">BERHANENA SELAM PRINTING ENTERPRISE</span>
+    </div>
+
+</div>
+
+</body>
+</html>
